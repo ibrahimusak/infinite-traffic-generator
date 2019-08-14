@@ -548,7 +548,7 @@ def proxychecker(i):
 	proxy_support = urllib.request.ProxyHandler({'http' : proxy}) # compone la richiesta con il proxy
 	opener = urllib.request.build_opener(proxy_support)
 	urllib.request.install_opener(opener)
-	req = urllib.request.Request(("http://atakoyescort.com"))			# compone la richiesta a google
+	req = urllib.request.Request(("http://www.google.com"))			# compone la richiesta a google
 	req.add_header("User-Agent", random.choice(useragents))			# aggiunge useragent random per fare sembrare più realistica la req
 	try:
 		urllib.request.urlopen(req, timeout=60)						# apre il sito
