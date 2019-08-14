@@ -1,4 +1,4 @@
-Send proxy traffic non-limit
+Send proxy traffic non-limit. Javascript is working so you can see on analytics. 
 
 For install
 
