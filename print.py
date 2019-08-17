@@ -28,20 +28,16 @@ def main():
 		from random import randint
 		from time import sleep
 		sleep(randint(10,20))
-		sess.reset()
-		server.kill()
 		gc.collect()
-		os._exit(1)
 	except:
-		os._exit(1)
-		gc.collect()
+		pass
 try:	
 	dryscrape.start_xvfb()
 except:
 	os._exit(1)
 
 if __name__ == '__main__':
-    for t in range(150):
+    for t in range(50):
         t = threading.Thread(target=main)
         t.start()
 	
