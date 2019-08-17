@@ -5,17 +5,17 @@ import time
 filename = sys.argv[1]
 a = 0
 while True:
-	while a<=20:
+	while a<=10:
 		print("islem yeniden basladi")
 		os.system("killall Xvfb")
 		os.system("killall webkit_server")
 		p = Popen("python " + filename, shell=True)     
 		p.wait()
 		a += 1
-	while a>20:
+	while a>10:
 		print("proxy toplaniyor")
 		os.system("killall Xvfb")
 		os.system("killall webkit_server")
 		p = Popen("python3 "+"proxy.py",  shell=True)     
 		p.wait()
-		a -=20
+		a -=10
